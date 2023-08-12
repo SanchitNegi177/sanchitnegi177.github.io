@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/Navigation bar/nav.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar1">
+            <ul>
+                <li>
+                    <a id="logo" title="Go to home" href="index.html">Sorting Visualizer</a>
+                    <div class="animation-container">
+                        <div class="animation-icon">
+                        </div>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="navbar2">
+            <ul>
+                <li ><a href="index.html"><span class="tab-locator">Home</span></a></li>
+                <li><a href="/About us/about.html">About Us</a></li>
+                <li><a href="/Contact/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main >
+        <button onclick="topFunction()" id="TopBtn" title="Go to top">
+            <script src="index.js"></script>
+            <ion-icon name="arrow-up-circle">Top</ion-icon>
+        </button>
+
+        <div class ="text">
+        <p >Welcome to our sorting visualization website! Our website is a powerful and
+            interactive tool that allows you to visualize various sorting algorithms in real-time, giving you a unique
+            and engaging way to learn about the fascinating world of computer science.</p> 
+        <p >With our website, you can explore a wide range of sorting algorithms and see how they
+            work in action, from simple algorithms like bubble sort to more complex algorithms like quicksort and merge
+            sort. Our visualization tools make it easy to understand how these algorithms work, and our side-by-side
+            comparisons allow you to see how different algorithms stack up against each other.</p>
+        <p >Our website is designed to be easy to use, with intuitive navigation and clear,
+            concise explanations of each sorting algorithm. Whether you're a student learning about sorting algorithms
+            for the first time, a developer looking to improve your skills, or simply curious about the world of
+            computer science, our website has something for everyone.</p>
+        <p >So why wait? Start exploring our sorting visualization website today and discover the
+            power of algorithms in action!</p>
+        
+            <div class="sort-btn">
+               <a href="/Selection sort/selection_sort.html"><button  class="sorts jura">Selection Sort</button></a> 
+               <a href="/Bubble sort/bubble_sort.html"><button class="sorts jura">Bubble Sort</button></a> 
+               <a href="/Insertion sort/insertion_sort.html"><button  class="sorts jura">Insertion Sort</button></a> 
+            </div>
+            <div class="sort-btn">
+                <a href="/Merger sort/merge_sort.html"><button  class="sorts jura">Merge Sort</button> </a>
+                <!-- <a href="/"><button class="sorts jura">Heap Sort</button></a> -->
+                <a href="/Quick sort/quick_sort.html"><button  class="sorts jura">Quick Sort</button></a>
+            </div>
+        </div>    
+        </main>
+    <footer>
+        <div class="copywrite">COPYRIGHT &copy-ALL CLAIMS ARE RESERVED</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+}
+
+.navbar1 {
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 80px;
+    background-color:#0B0C10;
+    
+}
+
+.navbar1 li {
+    list-style: none;
+    /* margin: 12px 40px; */
+}
+
+.navbar1 ul {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 10px;
+    padding-left: 75px;
+}
+
+#logo {
+   
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: jura, 'Courier New', Courier, monospace;
+    
+}
+
+.navbar2 {
+    font-family: jura, 'Courier New', Courier, monospace;
+    margin-top: 15px;
+    z-index: 5;
+    width: 100%;
+    height: 72px;
+}
+
+.navbar2 li {
+    list-style: none;
+    margin: 10px 40px;
+    font-size: large;
+
+}
+
+.navbar2 ul {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-top: 10px;
+}
+
+.navbar2 li a {
+    color: white;
+    padding: 3px 3px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar2 li a:hover {
+    text-decoration: underline;
+    color:#66FCF1
+}
+
+
+
+.tab-locator{
+    color:#66FCF1;
+    text-decoration: underline;
+    color: #66FCF1;
+}
+
+.tab-locator-clr{
+    background-color: #1F2833;
+    border: none;
+    text-decoration: underline;
+    color: #66FCF1;
+    transform: scale(1.2);
+ }
+
+.animation-container {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.animation-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #66FCF1;
+    border-radius: 50%;
+    animation: titleAnimation 0.5s infinite alternate;
+}
+
+@keyframes titleAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-25px);
+    }
+}
+
+.jura{
+    font-family: jura, 'Segoe UI', Tahoma, Verdana, sans-serif,'Courier New', Courier, monospace;
+}

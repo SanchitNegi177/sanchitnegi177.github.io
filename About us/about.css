@@ -1,0 +1,26 @@
+.text{
+    background-color:#1d1f25;    
+    color: white;
+    border-radius: 5px;
+    margin: 18px 100px; 
+    padding: 70px 100px;
+    line-height: 50px;
+    font-family: jura, 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bg-img{
+    /* background-image:#1F2833 url("about\ us.png"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body{
+    background-color:#1F2833;   
+}
+    
+p{
+    word-spacing: 7px;
+    padding: 16px;
+}

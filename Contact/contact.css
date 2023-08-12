@@ -1,0 +1,41 @@
+
+.text{
+    background-color:#1d1f25;    
+    color: white;
+    border-radius: 5px;
+    margin: 18px 100px; 
+    padding: 70px 100px;
+}
+
+.contact-img-size{
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+}
+
+.centre-text{
+    padding-top: 35px;
+    text-align: center;
+    line-height: 20px;
+    font-family: jura, 'Courier New', Courier, monospace;
+    font-weight:bolder; 
+}
+
+
+.big{
+    text-decoration: underline;
+   font-size: x-large;
+ }
+
+ .links{
+    color: #45A29E;
+    text-decoration: underline #45A29E;
+ }
+
+ body{
+    background-color:#1F2833;    
+}
+
+.jura{
+    font-family: jura, 'Segoe UI', Tahoma, Verdana, sans-serif,'Courier New', Courier, monospace;
+}

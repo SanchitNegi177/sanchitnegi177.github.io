@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort</title>
+    <link rel="stylesheet" href="insertion_sort.css">
+    <link rel="stylesheet" href="/Navigation bar/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar1">
+            <ul>
+                <li>
+                    <a id="logo" title="Go to home" href="/index.html">Sorting Visualizer</a>
+                    <div class="animation-container">
+                        <div class="animation-icon">
+                        </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav class="navbar2">
+            <ul>
+                <li><a href="/Selection sort/selection_sort.html"><button  class="sorts jura">Selection Sort</button></a></li>
+                <li><a href="/Bubble sort/bubble_sort.html"><button  class="sorts jura">Bubble Sort</button></a> </li>
+                <li> <a href="/Insertion sort/insertion_sort.html"><button  class="sorts tab-locator-clr jura">Insertion Sort</button></a> </li>
+                <li> <a href="/Merger sort/merge_sort.html"><button  class="sorts jura">Merge Sort</button></a> </li>
+                <li> <a href="/Quick sort/quick_sort.html"><button  class="sorts jura">Quick Sort</button></a> </li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main >
+        <button onclick="topFunction()" id="TopBtn" title="Go to top">
+            <ion-icon name="arrow-up-circle">Top</ion-icon>
+        </button>
+
+        <div class ="box">
+            <div class="title-box"> 
+            <div id="title-txt">Insertion Sort</div>
+            <br>
+            <div class="slider-ctn" >
+            <label for="Number" >Number of inputs:</label>
+            <input type="range" id="Number" name="Number of inputs" min="10" max="120" value="20" oninput="sliderChange()"/><span id="sliderRangeValue">20</span>
+            <br>
+            <label for="Speed" >Sorting Speed:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="range" id="Speed" name="Sorting Speed " min="1" max="10" value="4"  oninput="speedChange()"/> <span id="speedRangeValue">4</span> <span style="font-size: 2rem;">x</span>
+            </div>
+            </div>
+
+            <br>
+            <div id="container" >
+            <script src="insertion_sort.js"></script>
+            </div>
+            <div class="btn_container">
+                <button class="btn" onclick="reset()">Reset</button>
+                <button class="btn" id="buttonplay" onclick="play()">Play</button>
+            </div>
+            <h1>DESCRIPTION</h3><br>
+            <p class="text">
+                Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It's less performant than advanced sorting algorithms, but it can still have some advantages: it's really easy to implement and it's efficient on small data structures almost sorted.            
+            </p>
+            <p class="text">
+                The algorithm divides the data structure in two sublists: a sorted one, and one still to sort. Initially, the sorted sublist is made up of just one element and it gets progressively filled. For every iteration, the algorithm picks an element on the unsorted sublist and inserts it at the right place in the sorted sublist.            </p>
+            <br><br>
+            <h1>COMPLEXITY</h1><br>
+            
+            <table class="text">
+                <tr>
+                  <th>Average Case</th>
+                  <td>O(n <sup>2</sup>)</td>
+                </tr>
+                <tr>
+                  <th>Best Case</th>
+                  <td>O(n)</td>
+                </tr>
+                <tr>
+                  <th>Worst Case</th>
+                  <td>O(n <sup>2</sup>)</td>
+                </tr>
+                <tr>
+                  <th>Space complexity &nbsp&nbsp</th>
+                  <td>O(1)</td>
+                </tr>
+                </table>
+                <br><br>
+                <h1>IMPLEMENTATIONS</h1><br><br>
+<div class="code-container">
+    <div>
+                <h1>C++</h1>
+                <pre class="code"><code >void InsertionSort(int arr[], int n)
+{
+    int i, key, j;
+    for (i = 1; i < n; i++) 
+    {
+        key = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > key) 
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+</div>
+</code></pre>
+<div>
+                <h1>Javascript</h1>
+                <pre class="code"><code >function InsertionSort(arr, n)
+{
+    let i, key, j;
+    for (i = 1; i < n; i++)
+    {
+        key = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > key)
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+</code></pre>
+</div>
+        </div>
+        </div>    
+
+    
+</main>
+   
+</body>
+
+</html>
