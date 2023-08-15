@@ -91,7 +91,7 @@ function showBars(move) {
     container.innerHTML = "";
     for (let i = 0; i < array.length; i++) {
         const bar = document.createElement("div");
-        bar.style.height = array[i] * 100 + "%";
+        bar.style.height = array[i] * 100+ 2 + "%";
         bar.style.width = n * 100 + "%";
         bar.style.backgroundColor = "#66FCF1";
         bar.style.borderRadius = "15px";
